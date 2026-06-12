@@ -1,10 +1,12 @@
 # Quantum Computing
 
-A personal learning repository for exploring Quantum Computing concepts using **Q#** (Q Sharp) — Microsoft's domain-specific language for quantum programming.
+A personal learning repository for exploring Quantum Computing concepts using two languages:
+- **Q#** (Q Sharp) — Microsoft's domain-specific language for quantum programming
+- **Python** — using NumPy for simulating quantum states and operations
 
 ## Purpose
 
-This repository is built for learning purposes. It covers fundamental quantum computing concepts through hands-on Q# programs, from basic qubit operations to well-known quantum protocols.
+This repository is built for learning purposes. It covers fundamental quantum computing concepts through hands-on programs, from basic qubit operations to well-known quantum protocols, implemented in both Q# and Python.
 
 ## Repository Structure
 
@@ -17,6 +19,10 @@ Basics_of_Quantum_Computing_QSharp/
 ├── Random_Number.qs             # Quantum random number generation
 ├── Skwed_randombit_generator.qs # Skewed/biased random bit generation
 └── main.qs                      # Entry point
+
+Basics_of_Quantum_Computing_Python/
+├── Representation_and_Measuring_Qubit.py  # Qubit states, superposition, and measurement probabilities
+└── Building_Multi_Qubit_State.py          # Tensor products, multi-qubit states, and Bell states
 ```
 
 ## Topics Covered
@@ -24,28 +30,46 @@ Basics_of_Quantum_Computing_QSharp/
 - Qubit initialization and measurement
 - Superposition and quantum gates
 - Quantum entanglement (Bell states)
-- Multi-qubit operations
+- Multi-qubit operations and tensor products
 - Quantum teleportation
 - Quantum randomness
 
 ## Prerequisites
 
+### For Q# programs
 - [.NET SDK](https://dotnet.microsoft.com/download)
 - [Microsoft Quantum Development Kit (QDK)](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk)
 
+### For Python programs
+- Python 3.9+
+- NumPy (`pip install numpy`)
+
 ## Getting Started
 
-Clone the repo and run any `.qs` file using the QDK:
-
+**Clone the repo:**
 ```bash
 git clone https://github.com/Omkyao1998/Quantum_Computing.git
-cd Quantum_Computing/Basics_of_Quantum_Computing_QSharp
+cd Quantum_Computing
+```
+
+**Run a Q# program:**
+```bash
+cd Basics_of_Quantum_Computing_QSharp
 dotnet run
 ```
 
-## Language
+**Run a Python program:**
+```bash
+cd Basics_of_Quantum_Computing_Python
+python3 Representation_and_Measuring_Qubit.py
+```
 
-All programs are written in **Q#** — a language designed by Microsoft specifically for expressing quantum algorithms.
+## Languages
+
+| Language | Purpose |
+|----------|---------|
+| **Q#** | Quantum hardware-level programming via Microsoft QDK |
+| **Python + NumPy** | Simulating quantum states and operations classically |
 
 ---
 
