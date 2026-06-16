@@ -22,7 +22,11 @@ Basics_of_Quantum_Computing_QSharp/
 
 Basics_of_Quantum_Computing_Python/
 ├── Representation_and_Measuring_Qubit.py  # Qubit states, superposition, and measurement probabilities
-└── Building_Multi_Qubit_State.py          # Tensor products, multi-qubit states, and Bell states
+├── Building_Multi_Qubit_State.py          # Tensor products, multi-qubit states, and Bell states
+├── Gates_as_Matrices.py                   # Quantum gates represented as NumPy matrices
+├── Qubit_Circuits.py                      # Building and simulating simple qubit circuits
+├── Bell_State.py                          # Constructing Bell states using H gate and CNOT
+└── Measuring_with_Shot.py                 # Simulating measurement shots and computing expectation values
 ```
 
 ## Topics Covered
